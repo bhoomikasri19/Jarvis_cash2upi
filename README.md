@@ -50,32 +50,6 @@ Frontend runs at: `http://localhost:3000`
 - Show OTP to seeker
 - Mark as complete → Earn commission
 
----
-
-## 🏗 Project Structure
-
-```
-cashbridge/
-├── backend/
-│   ├── main.py              # FastAPI app entry point
-│   ├── requirements.txt
-│   ├── routes/
-│   │   └── match.py         # All API endpoints
-│   └── data/
-│       └── fake_users.py    # Demo database
-└── frontend/
-    ├── src/
-    │   ├── pages/
-    │   │   ├── Home.jsx     # Role selection + login
-    │   │   ├── Seeker.jsx   # Get cash flow
-    │   │   ├── Provider.jsx # Give cash flow
-    │   │   └── Success.jsx  # Transaction complete
-    │   ├── App.jsx          # Router
-    │   └── index.css        # Global design system
-    └── vite.config.js
-```
-
----
 
 ## 🔑 Key Features
 
