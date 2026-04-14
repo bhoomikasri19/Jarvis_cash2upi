@@ -1,5 +1,12 @@
 # 💸 Cash2UPI
 
+DEMO LINK/DEPLOY LINK
+https://cash2upi.netlify.app/
+
+DEMO video
+https://drive.google.com/file/d/1QEPNeMH4EYk_X9G4UUYZN7ngnmOq5uQW/view?usp=share_link
+
+
 **Peer-to-Peer Cash Exchange Platform**  
 *Digital money ↔ Physical cash, instantly and safely*
 
@@ -59,10 +66,6 @@ Frontend runs at: `http://localhost:3000`
 - **GPS-based matching** — find providers within 1km
 - **Commission model** — providers earn ₹2-10 per transaction
 
-DEMO LINK/DEPLOY LINK
-https://cash2upi.netlify.app/
 
-DEMO video
-https://drive.google.com/file/d/1QEPNeMH4EYk_X9G4UUYZN7ngnmOq5uQW/view?usp=share_link
 
 
