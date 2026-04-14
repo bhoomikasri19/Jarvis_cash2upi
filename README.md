@@ -59,6 +59,7 @@ Frontend runs at: `http://localhost:3000`
 - **GPS-based matching** — find providers within 1km
 - **Commission model** — providers earn ₹2-10 per transaction
 
-
+DEMO LINK/DEPLOY LINK
+https://cash2upi.netlify.app/
 
 
