@@ -1,16 +1,90 @@
-# React + Vite
+# 💸 CashBridge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Peer-to-Peer Cash Exchange Platform**  
+*Digital money ↔ Physical cash, instantly and safely*
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Setup Instructions
 
-## React Compiler
+### Backend (FastAPI)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
 
-## Expanding the ESLint configuration
+Backend runs at: `http://localhost:8000`  
+API docs at: `http://localhost:8000/docs`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### Frontend (React)
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs at: `http://localhost:3000`
+
+---
+
+## 📱 How to Demo
+
+1. Open `http://localhost:3000`
+2. Enter your name and phone
+3. Choose **"Get Cash"** (Seeker flow) or **"Give Cash"** (Provider flow)
+
+### Seeker Flow:
+- Enter amount (max ₹1000)
+- See nearby providers on map
+- Select a provider → Request match
+- Enter OTP shown in demo hint → Confirm
+
+### Provider Flow:
+- See incoming cash requests
+- Accept a request
+- Show OTP to seeker
+- Mark as complete → Earn commission
+
+---
+
+## 🏗 Project Structure
+
+```
+cashbridge/
+├── backend/
+│   ├── main.py              # FastAPI app entry point
+│   ├── requirements.txt
+│   ├── routes/
+│   │   └── match.py         # All API endpoints
+│   └── data/
+│       └── fake_users.py    # Demo database
+└── frontend/
+    ├── src/
+    │   ├── pages/
+    │   │   ├── Home.jsx     # Role selection + login
+    │   │   ├── Seeker.jsx   # Get cash flow
+    │   │   ├── Provider.jsx # Give cash flow
+    │   │   └── Success.jsx  # Transaction complete
+    │   ├── App.jsx          # Router
+    │   └── index.css        # Global design system
+    └── vite.config.js
+```
+
+---
+
+## 🔑 Key Features
+
+- **Max ₹1000 per transaction** — safety by design
+- **OTP verification** — cash confirmed before exchange
+- **Trust score system** — ratings unlock higher limits
+- **GPS-based matching** — find providers within 1km
+- **Commission model** — providers earn ₹2-10 per transaction
+
+
+
+
