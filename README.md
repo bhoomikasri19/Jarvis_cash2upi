@@ -62,4 +62,7 @@ Frontend runs at: `http://localhost:3000`
 DEMO LINK/DEPLOY LINK
 https://cash2upi.netlify.app/
 
+DEMO video
+https://drive.google.com/file/d/1QEPNeMH4EYk_X9G4UUYZN7ngnmOq5uQW/view?usp=share_link
+
 
