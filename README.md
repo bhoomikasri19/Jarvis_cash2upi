@@ -1,4 +1,4 @@
-# 💸 CashBridge
+# 💸 Cash2UPI
 
 **Peer-to-Peer Cash Exchange Platform**  
 *Digital money ↔ Physical cash, instantly and safely*
